@@ -12,15 +12,6 @@
     background-color: rgba(97, 96, 96, 0.171);
   }
    
-  .alunos-list li {
-    cursor: pointer;
-    position: relative;
-    left: 0;
-    background-color: rgba(97, 96, 96, 0.171);
-    margin: .5em;
-    padding: .3em 0;
-    height: 1.6em;
-  }
   button {
     font-family: Arial;
     border: solid 1px;
