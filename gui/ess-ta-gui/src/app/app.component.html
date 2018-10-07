@@ -8,7 +8,6 @@
   <tr>
     <td><label>Nome </label></td>
     <td><input [(ngModel)]="aluno.nome" ></td>
-    <td><button (click)="create(aluno)">Adicionar</button></td>
   </tr>
   <tr>
     <td><label>CPF </label></td>
@@ -19,8 +18,11 @@
     <td><input [(ngModel)]="aluno.email" ></td>
   </tr>
   <tr>
-    <td><label>git </label></td>
+    <td><label>Github </label></td>
     <td><input [(ngModel)]="aluno.git" ></td>
+  </tr>
+  <tr>
+    <td><button (click)="create(aluno)">Adicionar</button></td>
   </tr>
 </table>
 

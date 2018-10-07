@@ -10,15 +10,19 @@ import { AlunoService } from './aluno.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  aluno: Aluno = {nome: "", cpf: "", email: "", git: ""};
   constructor(private alunoService: AlunoService) {}
-  alunos: Aluno[] = [{nome: "ayla", cpf: "123", email: "a@blbla", git: "ayl"},
-                      {nome: "Heitor", cpf: "31743287801", email: "hscs@cin.ufpe.br", git: "heitorado"}];
+
+  aluno: Aluno = new Aluno();
+  alunos: Aluno[] = [];
 
 
   create(alu: Aluno): void {
     this.alunoService.create(alu);
     this.alunos.push(alu)
-    this.aluno = {nome: "", cpf: "", email: "", git: ""};
+    this.aluno = new Aluno();
   }
+
+  update(aluno: Aluno): void {
+    this.alunoService.update(aluno);
+ }
 }
