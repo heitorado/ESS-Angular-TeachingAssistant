@@ -24,11 +24,18 @@
   </tr>
 </table>
 
-<ul class="alunos-list">
-  <li *ngFor="let a of alunos">
-    <span>{{a.nome}}</span>,
-    <span>{{a.cpf}}</span>,
-    <span>{{a.email}}</span>,
-    <span>{{a.git}}</span>
-  </li>
-</ul>
+<table class=alunos-list *ngIf="alunos.length > 0">
+  <tr>
+    <th>Nome</th>
+    <th>CPF</th>
+    <th>email</th>
+    <th>Github</th>
+  </tr>
+
+  <tr *ngFor="let a of alunos">
+    <td>{{a.nome}}</td>
+    <td>{{a.cpf}}</td>
+    <td>{{a.email}}</td>
+    <td>{{a.git}}</td>
+  </tr>
+</table>
