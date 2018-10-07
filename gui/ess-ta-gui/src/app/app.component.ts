@@ -25,4 +25,8 @@ export class AppComponent {
   update(aluno: Aluno): void {
     this.alunoService.update(aluno);
  }
+
+ atualizarAluno(aluno: Aluno): void {
+  this.alunoService.update(aluno);
+  }
 }

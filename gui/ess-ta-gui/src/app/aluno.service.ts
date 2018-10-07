@@ -16,5 +16,15 @@ export class AlunoService {
            a.metas = aluno.metas;
         }
     }
+
+    console.log(aluno)
+  }
+
+  getAlunos(): Aluno[] {
+    var result: Aluno[] = [];
+    for (let a of this.alunos) {
+      result.push(a.clone());
+    }
+    return result;
   }
 }

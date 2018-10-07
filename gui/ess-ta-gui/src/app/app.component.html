@@ -2,7 +2,7 @@
   Teaching Assistant
 </h1>
 <h2>
-  Alunos
+  Alunos e Metas
 </h2>
 <table>
   <tr>
@@ -32,6 +32,8 @@
     <th>CPF</th>
     <th>email</th>
     <th>Github</th>
+    <th>Requisitos</th>
+    <th>Ger. de Config</th>
   </tr>
 
   <tr *ngFor="let a of alunos">
@@ -39,5 +41,7 @@
     <td>{{a.cpf}}</td>
     <td>{{a.email}}</td>
     <td>{{a.git}}</td>
+    <td class="meta"><input [(ngModel)]="a.metas['Requisitos']" (change)="atualizarAluno(a)"></td>
+    <td class="meta"><input [(ngModel)]="a.metas['GerDeConfig']" (change)="atualizarAluno(a)"></td>
   </tr>
 </table>
