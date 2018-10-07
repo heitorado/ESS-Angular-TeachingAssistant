@@ -22,13 +22,13 @@
     <td><label>git </label></td>
     <td><input [(ngModel)]="aluno.git" ></td>
   </tr>
-
-  <ul>
-    <li *ngFor="let a of alunos">
-      <span>{{a.nome}}</span>,
-      <span>{{a.cpf}}</span>,
-      <span>{{a.email}}</span>,
-      <span>{{a.git}}</span>
-    </li>
-  </ul>
 </table>
+
+<ul class="alunos-list">
+  <li *ngFor="let a of alunos">
+    <span>{{a.nome}}</span>,
+    <span>{{a.cpf}}</span>,
+    <span>{{a.email}}</span>,
+    <span>{{a.git}}</span>
+  </li>
+</ul>
